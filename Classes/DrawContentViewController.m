@@ -21,12 +21,18 @@
     [scrollWithPaging setPagingEnabled:TRUE];
     [self.view addSubview:scrollWithPaging];
     
+    UILabel *swipeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 35, self.view.frame.size.width, 20)];
+    [swipeLabel setBackgroundColor:[UIColor clearColor]];
+    [swipeLabel setTextAlignment:NSTextAlignmentCenter];
+    [swipeLabel setText:@"Please swipe"];
+    [self.view addSubview:swipeLabel];
+    
 	[self drawing];
 }
 
 -(void)drawing{
 	
-	drawContent = [[DrawContentView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x,self.view.frame.origin.y - 20,self.view.frame.size.width +30,self.view.frame.size.width)];
+	drawContent = [[DrawContentView alloc] initWithFrame:CGRectMake(960,self.view.frame.origin.y - 20,self.view.frame.size.width +30,self.view.frame.size.width)];
 	drawContent.shapeName = @"drawQuadCurve";
 	drawContent.lineSize = 2.1f;
     drawContent.lineColor = [UIColor blackColor];
@@ -46,14 +52,14 @@
     drawContent2.lineColor = [UIColor blackColor];
 	[scrollWithPaging addSubview:drawContent2];
     
-	drawContent3 = [[DrawContentView alloc] initWithFrame:CGRectMake(960 + 25,self.view.frame.origin.y + 80,self.view.frame.size.width,self.view.frame.size.width - 100)];
+	drawContent3 = [[DrawContentView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x + 25,self.view.frame.origin.y + 80,self.view.frame.size.width,self.view.frame.size.width - 100)];
 	drawContent3.lineSize = 2.1f;
 	drawContent3.messageText = @"raw engineering";
 	drawContent3.fontTextSize = 23.0f;
 	drawContent3.lineColor = [UIColor blackColor];
 	[scrollWithPaging addSubview:drawContent3];
 	
-	drawContent4 = [[DrawContentView alloc] initWithFrame:CGRectMake(960 + 50,170,50,50)];
+	drawContent4 = [[DrawContentView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x + 50,170,50,50)];
 	drawContent4.lineSize = 4.5f;
 	drawContent4.shapeName = @"drawRawQuadCurve";
 	drawContent4.lineColor = [UIColor blackColor];
@@ -83,7 +89,8 @@
 -(void)replay:(int)currentPage{
     switch (currentPage) {
         case 0:
-            [drawContent startAnimationWithDuration:2.5f];
+            [drawContent3 startAnimationWithDuration:2.5f];
+            [drawContent4 startAnimationWithDuration:2.5f];
             break;
         case 1:
             [drawContent1 startAnimationWithDuration:2.5f];
@@ -92,8 +99,7 @@
             [drawContent2 startAnimationWithDuration:2.5f];
             break;
         case 3:
-            [drawContent3 startAnimationWithDuration:2.5f];
-            [drawContent4 startAnimationWithDuration:2.5f];
+            [drawContent startAnimationWithDuration:2.5f];
             break;
         case 4:
             [drawContent5 startAnimationWithDuration:2.5f];
