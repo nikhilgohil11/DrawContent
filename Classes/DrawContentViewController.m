@@ -13,7 +13,7 @@
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView {
 	[super loadView];
-	[self.view setBackgroundColor:[UIColor whiteColor]];
+	[self.view setBackgroundColor:[UIColor blackColor]];
     
     scrollWithPaging = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0,320.0, self.view.frame.size.height)];
     [scrollWithPaging setContentSize:CGSizeMake(2240, self.view.frame.size.height)];
@@ -24,6 +24,7 @@
     UILabel *swipeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 35, self.view.frame.size.width, 20)];
     [swipeLabel setBackgroundColor:[UIColor clearColor]];
     [swipeLabel setTextAlignment:NSTextAlignmentCenter];
+    [swipeLabel setTextColor:[UIColor whiteColor]];
     [swipeLabel setText:@"Please swipe"];
     [self.view addSubview:swipeLabel];
     
@@ -35,13 +36,13 @@
 	drawContent = [[DrawContentView alloc] initWithFrame:CGRectMake(960,self.view.frame.origin.y - 20,self.view.frame.size.width +30,self.view.frame.size.width)];
 	drawContent.shapeName = @"drawQuadCurve";
 	drawContent.lineSize = 2.1f;
-    drawContent.lineColor = [UIColor blackColor];
+    drawContent.lineColor = [UIColor whiteColor];
 	[scrollWithPaging addSubview:drawContent];
 	
 	drawContent1 = [[DrawContentView alloc] initWithFrame:CGRectMake(320,self.view.frame.origin.y + 10,200,200)];
 	drawContent1.shapeName = @"drawRight";
 	drawContent1.lineSize = 10.0f;
-	drawContent1.lineColor = [UIColor blackColor];
+	drawContent1.lineColor = [UIColor whiteColor];
 	[scrollWithPaging addSubview:drawContent1];
 
 	drawContent2 = [[DrawContentView alloc] initWithFrame:CGRectMake(640,self.view.frame.origin.y + 40,self.view.frame.size.width +30,self.view.frame.size.width)];
@@ -49,38 +50,38 @@
 	drawContent2.lineSize = 2.1f;
 	drawContent2.fontTextSize = 23.0f;
 	drawContent2.firstPoint = CGPointMake(10, 10);
-    drawContent2.lineColor = [UIColor blackColor];
+    drawContent2.lineColor = [UIColor whiteColor];
 	[scrollWithPaging addSubview:drawContent2];
     
 	drawContent3 = [[DrawContentView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x + 25,self.view.frame.origin.y + 80,self.view.frame.size.width,self.view.frame.size.width - 100)];
 	drawContent3.lineSize = 2.1f;
 	drawContent3.messageText = @"raw engineering";
 	drawContent3.fontTextSize = 23.0f;
-	drawContent3.lineColor = [UIColor blackColor];
+	drawContent3.lineColor = [UIColor whiteColor];
 	[scrollWithPaging addSubview:drawContent3];
 	
 	drawContent4 = [[DrawContentView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x + 50,170,50,50)];
 	drawContent4.lineSize = 4.5f;
 	drawContent4.shapeName = @"drawRawQuadCurve";
-	drawContent4.lineColor = [UIColor blackColor];
+	drawContent4.lineColor = [UIColor whiteColor];
 	[scrollWithPaging addSubview:drawContent4];
     
 	drawContent5 = [[DrawContentView alloc] initWithFrame:CGRectMake(1280,10,self.view.frame.size.width,self.view.frame.size.width)];
 	drawContent5.lineSize = 4.5f;
 	drawContent5.shapeName = @"drawCancel";
-	drawContent5.lineColor = [UIColor blackColor];
+	drawContent5.lineColor = [UIColor whiteColor];
 	[scrollWithPaging addSubview:drawContent5];
     
     drawContent6 = [[DrawContentView alloc] initWithFrame:CGRectMake(1620,10,280,280)];
 	drawContent6.lineSize = 4.5f;
 	drawContent6.shapeName = @"drawArc";
-	drawContent6.lineColor = [UIColor blackColor];
+	drawContent6.lineColor = [UIColor whiteColor];
 	[scrollWithPaging addSubview:drawContent6];
     
     drawContent7 = [[DrawContentView alloc] initWithFrame:CGRectMake(1920,10,self.view.frame.size.width,self.view.frame.size.width)];
 	drawContent7.lineSize = 4.5f;
 	drawContent7.shapeName = @"drawCubicCurve";
-	drawContent7.lineColor = [UIColor blackColor];
+	drawContent7.lineColor = [UIColor whiteColor];
 	[scrollWithPaging addSubview:drawContent7];
 
     [self replay:0];    
