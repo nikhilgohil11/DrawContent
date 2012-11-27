@@ -4,7 +4,7 @@ This is a custom view where you can draw shape or draw text with animation.
 
 [Sample for splash screen] (https://vimeo.com/54274152 "SplashView")
 
-![Screenshot] (https://github.com/nikhilgohil11/DrawContent/blob/master/screenshot.png)
+![Screenshot] (screenshot.png)
 
 ## How to use ##
 	
