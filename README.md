@@ -2,9 +2,14 @@
 
 This is a custom view where you can draw shape or draw text with animation.
 
-[Sample for splash screen] (http://vimeo.com/54602798 "SplashView")
+[Sample for splash screen] (http://vimeo.com/54602798 "SplashView") and [password check] (https://vimeo.com/54601584 "PasswordCheck")
+
+<iframe src="http://player.vimeo.com/video/54602798?badge=0" width="500" height="556" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/54602798">splash screen</a> from <a href="http://vimeo.com/user9672352">nikhil</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
 
 ![Screenshot] (http://nikhilgohil11.com/github/Screenshot.png)
+
+
 
 ## How to use ##
 	
