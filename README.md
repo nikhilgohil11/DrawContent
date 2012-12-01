@@ -10,10 +10,11 @@ This is a custom view where you can draw shape or draw text with animation.
 
 
 ## How to use ##
+	#import "DrawContent.h"
 	
 For shape:
 
-	`DrawContentView *drawContent = [[DrawContentView alloc] initWithFrame:CGRectMake(x, y, width, height)];
+	DrawContentView *drawContent = [[DrawContentView alloc] initWithFrame:CGRectMake(x, y, width, height)];
 
 	drawContent.shapeName = @"drawQuadCurve"; //available shapes (Right , Cancel, Pentagon, Arc, Cubic curve, Quad curve)
 
@@ -23,11 +24,11 @@ For shape:
 
 	[scrollWithPaging addSubview:drawContent];
 
-    [drawContent startAnimationWithDuration:2.5f];`
+    [drawContent startAnimationWithDuration:2.5f];
 
 For text:
 
-	`DrawContentView *drawContent = [[DrawContentView alloc] initWithFrame:CGRectMake(x, y, width, height)];
+	DrawContentView *drawContent = [[DrawContentView alloc] initWithFrame:CGRectMake(x, y, width, height)];
 
 	drawContent.lineSize = 2.1f;
 
@@ -39,4 +40,4 @@ For text:
 
 	[scrollWithPaging addSubview:drawContent3];
 
-    [drawContent3 startAnimationWithDuration:2.5f];`
+    [drawContent3 startAnimationWithDuration:2.5f];
