@@ -2,7 +2,7 @@
 
 This is a custom view where you can draw shape or draw text with animation.
 
-[Sample for splash screen] (https://vimeo.com/54274152 "SplashView")
+[Sample for splash screen] (http://vimeo.com/54602798 "SplashView")
 
 ![Screenshot] (http://nikhilgohil11.com/github/Screenshot.png)
 
