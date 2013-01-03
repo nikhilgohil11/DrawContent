@@ -41,3 +41,9 @@ For text:
 	[scrollWithPaging addSubview:drawContent3];
 
     [drawContent3 startAnimationWithDuration:2.5f];
+    
+    
+## Lincense ##
+
+     [MIT License] (http://raweng.mit-license.org/ "MIT License")
+     
